@@ -114,44 +114,42 @@ nav ul li a:hover::after {
 
 
 /* Portfolio Section */
-#portfolio {
-    padding: 50px 10%;
-    text-align: justify;
-}
-#portfolio .title h1 {
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 20px;
+#portfolio h1{
+    align-items: center;
     color: #04e2ff;
 }
-.portfolio-grid {
+.projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
-.portfolio-item {
-    background: #1a1a1a;
+
+.project-card {
+    background: #000000;
     padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
-.portfolio-item:hover {
-    transform: scale(1.05);
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
-.portfolio-item img {
-    width: 100%;
-    border-radius: 10px;
+
+.project-card h3 {
+    margin: 10px 0;
 }
-.portfolio-item h3 {
-    margin: 15px 0 10px;
-    font-size: 24px;
-    color: #04e2ff;
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
 }
-.portfolio-item p {
-    color: #ccc;
-    font-size: 16px;
-    line-height: 1.5;
-}
+
 
 /* Contact Section */
 #contact {
@@ -164,11 +162,11 @@ nav ul li a:hover::after {
     margin-bottom: 20px;
     color: #04e2ff;
 }
-.contact-form {
+#contact {
     max-width: 600px;
     margin: 0 auto;
 }
-.contact-form input, .contact-form textarea {
+#contact input, .contact textarea {
     width: 100%;
     margin: 10px 0;
     padding: 10px;
@@ -178,7 +176,7 @@ nav ul li a:hover::after {
     background: #1a1a1a;
     color: #fff;
 }
-.contact-form button {
+#contact button {
     background: #04e2ff;
     border: none;
     padding: 10px 20px;
@@ -187,6 +185,6 @@ nav ul li a:hover::after {
     border-radius: 5px;
     cursor: pointer;
 }
-.contact-form button:hover {
+#contact  button:hover {
     background: #03b5cc;
 }
